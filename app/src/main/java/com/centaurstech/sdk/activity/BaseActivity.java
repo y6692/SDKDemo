@@ -62,6 +62,7 @@ public class BaseActivity extends AppCompatActivity {
             setStatusBarColor(statusBarColor());
         }
         super.onCreate(savedInstanceState);
+
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.KITKAT && Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP) {
             ViewGroup view = (ViewGroup) getWindow().getDecorView();
             view.findViewById(android.R.id.content).setPadding(0, getStatusBarHeight(), 0, 0);
